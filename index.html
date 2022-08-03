@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coldplay - Official Site</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="../img/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="imgIndex">
+            <a href="./index.html"> <img src="./img/coldplay logo.png" alt="coldplaylogo" width="100px" height="100px"></a>
+        </div>
+        <div>
+            <nav>
+                <ul class="navFlex">
+                    <li class="nav_link"><a href="./index.html">INICIO</a></li>
+                    <li class="nav_link"><a href="./pages/biografia.html">BIOGRAFIA</a></li>
+                    <li class="nav_link"><a href="./pages/discografia.html">DISCOGRAFIA</a></li>
+                    <li class="nav_link"><a href="./pages/giras.html">GIRAS</a></li>
+                    <li class="nav_link"><a href="./pages/contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="gridIndex">
+        <h1 class="mainFont textMain titleBio h1Index">Coldplay</h1>
+        <video class="videoMain" src="./video/video index coldplay.mp4" width="600px" height="600px" controls autoplay loop preload="auto"></video>  
+        <H2 class="mainFont textMain h2Index">De las bandas con las giras mas exitosas de todos los tiempos</H2>
+        <p class="mainFont pMain">Escucha las principales canciones aquí!</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/4gzpq5DPGxSnKTe4SA8HAU?utm_source=generator" width="600" height="380" frameBorder="1px" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> 
+        <style>
+            @media screen and (max-width: 768px) {
+                .navFlex {
+                    flex-direction: column;
+                }
+                video {
+                    width: 350px;
+                    height: 350px;
+                }
+                h2 {
+                    height: 64px;
+                    width: 400px;
+                }
+                iframe {
+                    width: 450px;
+                    height: 360px;
+                }
+            
+            }
+            @media screen and (min-width: 769px) and (max-width: 1068px) {
+                video {
+                    width: 400px;
+                    height: 400px;
+                }
+                iframe {
+                    width: 600px;
+                    height: 360px;
+                }
+            }
+        </style>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://es-la.facebook.com/coldplay">FACEBOOK</a></li>
+            <li><a href="https://www.instagram.com/coldplay/">INSTAGRAM</a></li>
+            <li><a href="https://twitter.com/coldplay?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">TWITTER</a></li>   
+        </ul>
+    </footer>
+</body>
+
+</html>

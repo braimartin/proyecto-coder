@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coldplay - Official Site</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="imgIndex">
+            <a href="../index.html"> <img src="../img/coldplay logo.png" alt="coldplaylogo" width="100px" height="100px"></a>
+        </div>
+        <nav>
+            <ul class="navFlex">
+                <li class="nav_link"><a href="../index.html">INICIO</a></li>
+                <li class="nav_link"><a href="./biografia.html">BIOGRAFIA</a></li>
+                <li class="nav_link"><a href="./discografia.html">DISCOGRAFIA</a></li>
+                <li class="nav_link"><a href="./giras.html">GIRAS</a></li>
+                <li class="nav_link"><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="mainFont">¿Queres registrarte para recibir noticias de nuevos lanzamientos, novedades de la banda y mas?</h1>
+        <h2 class="mainFont">¡Hacelo acá abajo!</h2>
+        <form action="#" method="get">
+            <p class="mainFont">Nombre</p>
+            <input type="text" placeholder="Ingresa tu nombre" name="Nombre" label="enviar-nombre">
+            <br>
+            <p class="mainFont">Apellido</p>
+            <input type="text" placeholder="Ingresa tu apellido" name="Apellido">
+            <br>
+            <p class="mainFont">Email</p>
+            <input type="email" name="Email" placeholder="Ingresa tu email">
+            <br>
+            <div>
+                <h3 class="mainFont">Frecuencia de correos</h3>
+                <p class="mainFont">Alta</p>
+                <input type="radio" name="frecuencia" value="Alta">
+                <p class="mainFont">Moderada</p>
+                <input type="radio" name="frecuencia" value="Moderada">
+                <p class="mainFont">Baja</p>
+                <input type="radio" name="frecuencia" value="Baja">
+                <br>
+                <p class="mainFont">¿Acepta los terminos?</p>
+                <p>Si</p>
+                <input type="checkbox" value="Si" name="acepta">
+                <p class="mainFont">No</p>
+                <input type="checkbox" value="No" name="acepta">
+            </div>
+            <br>
+            <input type="submit" for="enviar-nombre" value="Registrarme">
+        </form>
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <li><a href="https://es-la.facebook.com/coldplay">FACEBOOK</a></li>
+                <li><a href="https://www.instagram.com/coldplay/">INSTAGRAM</a></li>
+                <li><a href="https://twitter.com/coldplay?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">TWITTER</a></li>   
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

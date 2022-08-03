@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coldplay - Official Site</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="imgIndex">
+            <a href="../index.html"> <img src="../img/coldplay logo.png" alt="coldplaylogo" width="100px" height="100px"></a>
+        </div>
+        <nav>
+            <ul class="navFlex">
+                <li class="nav_link"><a href="../index.html">INICIO</a></li>
+                <li class="nav_link"><a href="./biografia.html">BIOGRAFIA</a></li>
+                <li class="nav_link"><a href="./discografia.html">DISCOGRAFIA</a></li>
+                <li class="nav_link"><a href="./giras.html">GIRAS</a></li>
+                <li class="nav_link"><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="albumPadre">
+            <h1 class="mainFont centerTitle h1Grid">Mas de 10 años de éxitos</h1>
+            <div class="albumHijo1">
+                <a href="https://open.spotify.com/album/6ZG5lRT77aJ3btmArcykra?si=vF1ihr0ZQbO1xVFM2wMvYA"> <img src="../img/parachutes.jpg" alt="parachutes" width="300px" height="300px"> </a>
+                <p class="mainFont center">Parachutes (2000)</p>
+            </div>
+            <div class="albumHijo2">
+                <a href="https://open.spotify.com/album/0RHX9XECH8IVI3LNgWDpmQ?si=r83mmE_WT6iRbl6cE83ewQ"> <img src="../img/ARushofBloodToTheHead.jpg" alt="ARushofBloodToTheHead" width="300px" height="300px"> </a>
+                <p class="mainFont center">A Rush Of Blood The Head (2002)</p>
+            </div>
+            <div class="albumHijo3">
+                <a href="https://open.spotify.com/album/4E7bV0pzG0LciBSWTszra6?si=mdCsOlGaSFiQMr2OMnRvNg"> <img src="../img/x&y.png" alt="x&y" width="300px" height="300px"> </a>
+                <p class="mainFont center">X&Y (2005)</p>
+            </div>
+            <div class="albumHijo4">
+                <a href="https://open.spotify.com/album/1CEODgTmTwLyabvwd7HBty?si=D6DjLGMtRTOcqatmJCeYlA"> <img src="../img/viva la vida.jpg" alt="viva la vida" width="300px" height="300px"> </a>
+                <p class="mainFont center">Viva La Vida (2008)</p>
+            </div>
+            <div class="albumHijo5">
+                <a href="https://open.spotify.com/album/2R7iJz5uaHjLEVnMkloO18?si=d-wEQhRXSbGTXK67JBKdMg"> <img src="../img/mylo xyloto.jpg" alt="mylo xyloto" width="300px" height="300px"> </a>
+                <p class="mainFont center">Mylo Xyloto (2011)</p>
+            </div>
+            <div class="albumHijo6">
+                <a href="https://open.spotify.com/album/2G4AUqfwxcV1UdQjm2ouYr?si=JxvQ9QatSi6Pz3EAcbm4Kg"> <img src="../img/ghost stories.jpg" alt="ghost stories" width="300px" height="300px"> </a>
+                <P class="mainFont center">Ghost Stories (2014)</P>
+            </div>
+            <div class="albumHijo7">
+                <a href="https://open.spotify.com/album/3cfAM8b8KqJRoIzt3zLKqw?si=t7alKFdNS4mYf9iI6RoKZA"> <img src="../img/a head full of dreams.jpg" alt="AHFOD" width="300px" height="300px"> </a>
+                <p class="mainFont center">A Head Full Of Dreams (2015)</p>
+            </div>
+            <div class="albumHijo8">
+                <a href="https://open.spotify.com/album/0CE9VXSH70pz4BQzMPm9gO?si=CZ48WSygQa6PhBv_0ivhsw"> <img src="../img/kaleidoscope ep.jpg" alt="kaleidoscope ep" width="300px"> </a>
+                <p class="mainFont center">Kaleidoscope EP (2017)</p>
+            </div>
+            <div class="albumHijo9">
+                <a href="https://open.spotify.com/album/2FeyIYDDAQqcOJKOKhvHdr?si=n3FdHsPHRKWV1Aan3tREQQ"> <img src="../img/everyday life.jpg" alt="everyday life" width="300px" height="300px"> </a>
+                <p class="mainFont center">Everyday Life (2019)</p>
+            </div>
+            <div class="albumHijo10">
+                <a href="https://open.spotify.com/album/06mXfvDsRZNfnsGZvX2zpb?si=enDJQhcgRte2_Wv4s81fTQ"> <img src="../img/music of the spheres.jpg" alt="MOTS" width="300px" height="300px"> </a>
+                <p class="center mainFont bolder">¡ULTIMO ALBUM!</p>
+            </div>
+        <style>
+            @media screen and (max-width: 768px) {
+                .navFlex {
+                    flex-direction: column;
+                }
+                .albumPadre {
+                    grid-template-columns: 200px 200px;
+                    grid-template-rows: 180px 240px 240px 240px 240px 240px;
+                    grid-column-gap: 50px;
+                    grid-row-gap: 50px;
+                    justify-content: center;
+                    grid-template-areas:
+                    "h1 h1"
+                    "album1 album2"
+                    "album3 album4"
+                    "album5 album6"
+                    "album7 album8"
+                    "album9 album10"
+                }
+                section a img {
+                    width: 200px;
+                    height: 200px;
+                }
+                h1 {
+                    width: 160px;
+                    margin-bottom: 10px;
+                }
+                .albumHijo1 {
+                    width: 200px;
+                    height: 200px;
+                }
+                .albumHijo2 {
+                width: 200px;
+                height: 200px;
+                }
+                .albumHijo3 {
+                width: 200px;
+                height: 200px;
+                }
+                .albumHijo4 {
+                width: 200px;
+                height: 200px;
+                }
+                .albumHijo5 {
+                width: 200px;
+                height: 200px;
+                }
+                .albumHijo6 {
+                width: 200px;
+                height: 200px;
+                }
+                .albumHijo7 {
+                width: 200px;
+                height: 200px;
+                }
+                .albumHijo8 {
+                width: 200px;
+                height: 200px;
+                }
+                .albumHijo9 {
+                width: 200px;
+                height: 200px;
+                }
+                .albumHijo10 {
+                width: 200px;
+                height: 200px;
+                }
+                }
+            @media screen and (min-width: 769px) and (max-width: 1068px) {
+                .albumPadre {
+                    grid-template-columns: 275px 275px;
+                    grid-template-rows: 150px 270px 270px 270px 270px 270px;
+                    grid-column-gap: 50px;
+                    grid-row-gap: 50px;
+                    /*justify-content: center;*/
+                    grid-template-areas:
+                    "h1 h1"
+                    "album1 album2"
+                    "album3 album4"
+                    "album5 album6"
+                    "album7 album8"
+                    "album9 album10"
+                }
+                section a img {
+                    width: 250px;
+                    height: 250px;
+                }
+                h1 {
+                    width: 200px;
+                    margin-bottom: 10px;
+                }
+                .albumHijo1 {
+                    width: 250px;
+                    height: 250px;
+                }
+                .albumHijo2 {
+                width: 250px;
+                height: 250px;
+                }
+                .albumHijo3 {
+                width: 250px;
+                height: 250px;
+                }
+                .albumHijo4 {
+                width: 250px;
+                height: 250px;
+                }
+                .albumHijo5 {
+                width: 250px;
+                height: 250px;
+                }
+                .albumHijo6 {
+                width: 250px;
+                height: 250px;
+                }
+                .albumHijo7 {
+                width: 250px;
+                height: 250px;
+                }
+                .albumHijo8 {
+                width: 250px;
+                height: 250px;
+                }
+                .albumHijo9 {
+                width: 250px;
+                height: 250px;
+                }
+                .albumHijo10 {
+                width: 250px;
+                height: 250px;
+                }
+            }
+        </style>
+        </section>
+    </main>
+    <footer>
+            <ul>
+                <li><a href="https://es-la.facebook.com/coldplay">FACEBOOK</a></li>
+                <li><a href="https://www.instagram.com/coldplay/">INSTAGRAM</a></li>
+                <li><a href="https://twitter.com/coldplay?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">TWITTER</a></li>   
+            </ul>
+    </footer>
+</body>
+</html>
