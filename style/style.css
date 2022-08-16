@@ -16,7 +16,7 @@ nav ul li a {
     text-decoration: overline;  
 }
 header {
-    /*position: sticky;*/
+    position: sticky;
     top: 0px;
     z-index: 1;
 }
@@ -27,16 +27,15 @@ footer div ul li a {
     font-size: 17px;
     font-weight: bolder;
 }
-.nav_link {
+.nav-link {
     font-family: 'Titillium Web', sans-serif;
-    color: blueviolet;
-    display:inline-block;
+    color: white;
+    /*display:inline-block;
     width:10%;
-    padding:5px 10px;
-    /*background-color:grey;*/
-    /*border:1px solid #000;*/
-    text-align: center;
-    color:#fff;
+    padding: 10px
+    /*background-color:grey;
+    /*border:1px solid #000;
+    text-align center*/
 }
 .mainFont {
     font-family: 'PT Serif Caption', serif;
@@ -44,7 +43,7 @@ footer div ul li a {
 }
 nav a {
     text-decoration:none;
-    color:inherit;
+    color: blueviolet;
     font-size:14px;
     } 
 /*nav li:hover{
