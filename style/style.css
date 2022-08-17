@@ -183,23 +183,8 @@ footer {
     flex-wrap: nowrap;
     justify-content: space-around;
 }
-@media screen and (max-width: 768px) {
-    .navFlex {
-        flex-direction: column;
-    }
-    video {
-        width: 350px;
-        height: 350px;
-    }
-    h2 {
-        height: 64px;
-        width: 400px;
-    }
-    iframe {
-        width: 450px;
-        height: 360px;
-    }
-
+.rotate:hover {
+    transform: rotateX(30deg) rotateY(30deg)
 }
 @media screen and (min-width: 769px) and (max-width: 1068px) {
     video {
@@ -209,6 +194,70 @@ footer {
     iframe {
         width: 600px;
         height: 360px;
+    }
+    .albumPadre {
+        grid-template-columns: 275px 275px;
+        grid-template-rows: 150px 270px 270px 270px 270px 270px;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        /*justify-content: center;*/
+        grid-template-areas:
+        "h1 h1"
+        "album1 album2"
+        "album3 album4"
+        "album5 album6"
+        "album7 album8"
+        "album9 album10"
+    }
+    section a img {
+        width: 250px;
+        height: 250px;
+    }
+    h1 {
+        width: 300px;
+        max-width: max-content;
+        margin: auto;
+        
+    }
+    .albumHijo1 {
+        width: 250px;
+        height: 250px;
+    }
+    .albumHijo2 {
+    width: 250px;
+    height: 250px;
+    }
+    .albumHijo3 {
+    width: 250px;
+    height: 250px;
+    }
+    .albumHijo4 {
+    width: 250px;
+    height: 250px;
+    }
+    .albumHijo5 {
+    width: 250px;
+    height: 250px;
+    }
+    .albumHijo6 {
+    width: 250px;
+    height: 250px;
+    }
+    .albumHijo7 {
+    width: 250px;
+    height: 250px;
+    }
+    .albumHijo8 {
+    width: 250px;
+    height: 250px;
+    }
+    .albumHijo9 {
+    width: 250px;
+    height: 250px;
+    }
+    .albumHijo10 {
+    width: 250px;
+    height: 250px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -234,8 +283,8 @@ footer {
         height: 200px;
     }
     h1 {
-        width: 160px;
-        margin-bottom: 10px;
+        width: 150px;
+        margin: auto;
     }
     .albumHijo1 {
         width: 200px;
@@ -277,74 +326,24 @@ footer {
     width: 200px;
     height: 200px;
     }
+    .navFlex {
+        flex-direction: column;
     }
-@media screen and (min-width: 769px) and (max-width: 1068px) {
-    .albumPadre {
-        grid-template-columns: 275px 275px;
-        grid-template-rows: 150px 270px 270px 270px 270px 270px;
-        grid-column-gap: 50px;
-        grid-row-gap: 50px;
-        /*justify-content: center;*/
-        grid-template-areas:
-        "h1 h1"
-        "album1 album2"
-        "album3 album4"
-        "album5 album6"
-        "album7 album8"
-        "album9 album10"
+    video {
+        width: 350px;
+        height: 350px;
     }
-    section a img {
-        width: 250px;
-        height: 250px;
+    h2 {
+        height: 64px;
+        width: 400px;
     }
-    h1 {
-        width: 200px;
-        margin-bottom: 10px;
-    }
-    .albumHijo1 {
-        width: 250px;
-        height: 250px;
-    }
-    .albumHijo2 {
-    width: 250px;
-    height: 250px;
-    }
-    .albumHijo3 {
-    width: 250px;
-    height: 250px;
-    }
-    .albumHijo4 {
-    width: 250px;
-    height: 250px;
-    }
-    .albumHijo5 {
-    width: 250px;
-    height: 250px;
-    }
-    .albumHijo6 {
-    width: 250px;
-    height: 250px;
-    }
-    .albumHijo7 {
-    width: 250px;
-    height: 250px;
-    }
-    .albumHijo8 {
-    width: 250px;
-    height: 250px;
-    }
-    .albumHijo9 {
-    width: 250px;
-    height: 250px;
-    }
-    .albumHijo10 {
-    width: 250px;
-    height: 250px;
+    iframe {
+        width: 450px;
+        height: 360px;
     }
 }
-.rotate:hover {
-    transform: rotateX(30deg) rotateY(30deg)
-}
+
+
 
 
 
