@@ -27,8 +27,7 @@ footer {
       margin: 15px; }
       footer .ulFlexibleFooter li a {
         font-family: "Titillium Web", sans-serif;
-        text-decoration: none
- font-size 17px;
+        text-decoration: none font-size 17px;
         color: blueviolet; }
         footer .ulFlexibleFooter li a:hover {
           background-color: white;
@@ -61,11 +60,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   justify-items: center;
-  grid-template-areas: ". h1 ."
- ". video ."
- ". h2 ."
- ". p ."
- ". iframe ."; }
+  grid-template-areas: ". h1 ." ". video ." ". h2 ." ". p ." ". iframe ."; }
   .gridIndex .titleBio {
     font-size: 65px; }
   .gridIndex .h1Index {
@@ -92,11 +87,7 @@ footer {
   grid-column-gap: 60px;
   grid-row-gap: 60px;
   justify-content: center;
-  grid-template-areas: "h1 h1 h1"
- "album1 album2 album3"
- "album4 album5 album6"
- "album7 album8 album9"
- ". album10 ."; }
+  grid-template-areas: "h1 h1 h1" "album1 album2 album3" "album4 album5 album6" "album7 album8 album9" ". album10 ."; }
   .albumPadre .pBio {
     line-height: 2; }
   .albumPadre .center {
@@ -133,8 +124,7 @@ footer {
 
 .h1Bio {
   display: flex;
-  justify-content: center;
-  margin-right: 300px; }
+  justify-content: center; }
 
 @media screen and (min-width: 769px) and (max-width: 1068px) {
   video {
@@ -150,16 +140,11 @@ footer {
     grid-row-gap: 50px;
     justify-content: center;
     justify-items: center;
-    grid-template-areas: "h1 h1"
- "album1 album2"
- "album3 album4"
- "album5 album6"
- "album7 album8"
- "album9 album10"; }
+    grid-template-areas: "h1 h1" "album1 album2" "album3 album4" "album5 album6" "album7 album8" "album9 album10"; }
   section a img {
     width: 250px;
     height: 250px; }
-  h1 {
+  .h1 {
     width: 300px;
     max-width: max-content;
     margin: auto; }
@@ -197,7 +182,8 @@ footer {
     margin-top: 100px; }
   .h1Bio {
     display: flex;
-    justify-content: center; } }
+    justify-content: center;
+    justify-items: center; } }
 
 @media screen and (max-width: 768px) {
   .gridIndex {
@@ -206,11 +192,7 @@ footer {
     justify-items: center;
     align-content: center;
     align-items: center;
-    grid-template-areas: " h1 "
- "video"
- "h2"
- "p"
- "iframe"; }
+    grid-template-areas: " h1 " "video" "h2" "p" "iframe"; }
   .albumPadre {
     grid-template-columns: 200px;
     grid-template-rows: 180px 240px 240px 240px 240px 240px;
@@ -220,12 +202,7 @@ footer {
     justify-items: center;
     align-content: center;
     align-items: center;
-    grid-template-areas: "h1 h1"
- "album1 album2"
- "album3 album4"
- "album5 album6"
- "album7 album8"
- "album9 album10"; }
+    grid-template-areas: "h1 h1" "album1 album2" "album3 album4" "album5 album6" "album7 album8" "album9 album10"; }
   .albumHijo1 {
     width: 200px;
     height: 200px; }
@@ -285,7 +262,9 @@ footer {
 
 .h1Bio {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-left: 160px;
+  margin-bottom: 20px; }
 
 .carousel-inner {
   width: 500px;
@@ -307,4 +286,7 @@ div h2 {
   margin-left: 90px; }
 
 .h1Bio {
-  margin-left: 30%; }
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 20px; }

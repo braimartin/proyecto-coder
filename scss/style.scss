@@ -170,7 +170,7 @@
 .h1Bio {
   display: flex;
   justify-content: center;
-  margin-right: 300px;
+
 }
   
   @media screen and (min-width: 769px) and (max-width: 1068px) {
@@ -206,7 +206,7 @@
           }
       }
     }
-    h1 {
+    .h1 {
         width: 300px;
         max-width: max-content;
         margin: auto
@@ -259,6 +259,8 @@
     .h1Bio {
       display: flex;
       justify-content: center;
+      justify-items: center;
+      
     }
   }
   @media screen and (max-width: 768px) {
@@ -383,6 +385,8 @@
   .h1Bio {
     display: flex;
     justify-content: center;
+    margin-left: 160px;
+    margin-bottom: 20px;
   }
   .carousel-inner {
     width: 500px;
@@ -405,7 +409,9 @@
       margin-left: 90px;
     }
   }
-
-  .h1Bio {
-    margin-left: 30%;
-  }
+.h1Bio {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 20px;
+}
