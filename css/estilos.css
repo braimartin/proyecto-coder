@@ -3,35 +3,15 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
-  background: #232430;
-  background: linear-gradient(0deg, #232430 18%, #0e1130 30%, black 100%); }
-
+/*MAPA DECLARADO*/
+/*VARIABLES DECLARADAS DE SASS*/
+/*HEADER DEL CSS*/
+/*USO DE UN MAP*/
 header {
   position: sticky;
   top: 0px;
   z-index: 1;
   background-color: black; }
-
-footer {
-  position: sticky;
-  bottom: 0;
-  margin-top: 40px;
-  background-color: black; }
-  footer .ulFlexibleFooter {
-    list-style-type: none;
-    display: flex;
-    justify-content: center; }
-    footer .ulFlexibleFooter li {
-      display: inline-block;
-      margin: 15px; }
-      footer .ulFlexibleFooter li a {
-        font-family: "Titillium Web", sans-serif;
-        text-decoration: none font-size 17px;
-        color: blueviolet; }
-        footer .ulFlexibleFooter li a:hover {
-          background-color: white;
-          color: blueviolet; }
 
 .nav-link {
   font-family: "Titillium Web", sans-serif;
@@ -41,6 +21,15 @@ footer {
   .nav-link:hover {
     color: blueviolet; }
 
+.imgIndex {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px; }
+
+/*VARIABLES DECLARADAS DE SASS*/
+/*MIXIN DECLARADOS*/
+/*VARIABLES DECLARADAS DE SASS*/
+/*CSS DEL MAIN*/
 .mainFont {
   font-family: "PT Serif Caption", serif;
   color: blueviolet; }
@@ -51,12 +40,55 @@ footer {
   margin-top: 45px;
   margin-bottom: 35px; }
 
-.imgIndex {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px; }
+/*USO DEL MIXIN*/
+.h1Bio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; }
 
+.carousel-inner {
+  width: 500px;
+  height: 450px; }
+
+/*USO DEL MIXIN*/
+.contactoFlex, .sectionGiras, footer .ulFlexibleFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/*USO DE UN EXTEND*/
+/*MAPA DECLARADO*/
+/*VARIABLES DECLARADAS DE SASS*/
+/*FOOTER EN EL CSS*/
+footer {
+  position: sticky;
+  bottom: 0;
+  margin-top: 40px;
+  background-color: black;
+  /*USO DE UN EXTEND*/ }
+  footer .ulFlexibleFooter {
+    list-style-type: none;
+    flex-direction: row; }
+    footer .ulFlexibleFooter li {
+      display: inline-block;
+      margin: 15px; }
+      footer .ulFlexibleFooter li a {
+        color: blueviolet;
+        font-size: 17px;
+        font-family: "Titillium Web", sans-serif;
+        text-decoration: none; }
+      footer .ulFlexibleFooter li:hover {
+        background-color: white;
+        color: blueviolet; }
+
+/*MAPA DECLARADO*/
+/*VARIABLES DECLARADAS DE SASS*/
+/*USO DE GRID DEL CSS*/
 .gridIndex {
+  /*UN BLOQUE DE GRID*/
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   justify-items: center;
@@ -65,7 +97,8 @@ footer {
     font-size: 65px; }
   .gridIndex .h1Index {
     grid-area: h1;
-    margin-right: 110px; }
+    margin-right: 30px;
+    align-items: center; }
   .gridIndex .videoMain {
     margin-bottom: 40px;
     grid-area: video; }
@@ -81,6 +114,7 @@ footer {
     grid-area: iframe; }
 
 .albumPadre {
+  /*OTRO BLOQUE DE GRID*/
   display: grid;
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 200px 350px 350px 350px;
@@ -122,11 +156,10 @@ footer {
   .albumPadre .rotate:hover {
     transform: rotateX(30deg) rotateY(30deg); }
 
-.h1Bio {
-  display: flex;
-  justify-content: center; }
-
+/*TODAS LAS MEDIA QUERIES UTILIZADAS TANTO PARA MOBILE COMO PARA DESKTOP*/
 @media screen and (min-width: 769px) and (max-width: 1068px) {
+  .h1Index {
+    margin-left: 45px; }
   video {
     width: 400px;
     height: 400px; }
@@ -193,6 +226,8 @@ footer {
     align-content: center;
     align-items: center;
     grid-template-areas: " h1 " "video" "h2" "p" "iframe"; }
+  .h1Index {
+    margin-left: 30px; }
   .albumPadre {
     grid-template-columns: 200px;
     grid-template-rows: 180px 240px 240px 240px 240px 240px;
@@ -236,7 +271,7 @@ footer {
   section a img {
     width: 200px;
     height: 200px; }
-  h1 {
+  .h1 {
     width: 160px;
     margin-bottom: 10px; }
   video {
@@ -260,33 +295,13 @@ footer {
   div h2 {
     margin-left: 60px; } }
 
-.h1Bio {
-  display: flex;
-  justify-content: center;
-  margin-left: 160px;
-  margin-bottom: 20px; }
-
-.carousel-inner {
-  width: 500px;
-  height: 450px; }
-
-.contactoFlex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.sectionGiras {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+/*MAPA DECLARADO*/
+/*VARIABLES DECLARADAS DE SASS*/
+/*MIXIN DECLARADOS*/
+/*VARIABLES DECLARADAS DE SASS*/
+body {
+  background: #232430;
+  background: linear-gradient(0deg, #232430 18%, #0e1130 30%, black 100%); }
 
 div h2 {
   margin-left: 90px; }
-
-.h1Bio {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  margin-bottom: 20px; }
