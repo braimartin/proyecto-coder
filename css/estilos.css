@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*MAPA DECLARADO*/
+/*VARIABLES DECLARADAS DE SASS*/
+/*HEADER DEL CSS*/
+/*USO DE UN MAP*/
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: black; }
+
+.nav-link {
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+  width: 10%;
+  padding: 10px; }
+  .nav-link:hover {
+    color: blueviolet; }
+
+.imgIndex {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px; }
+
+/*VARIABLES DECLARADAS DE SASS*/
+/*MIXIN DECLARADOS*/
+/*VARIABLES DECLARADAS DE SASS*/
+/*CSS DEL MAIN*/
+.mainFont {
+  font-family: "PT Serif Caption", serif;
+  color: blueviolet; }
+
+.textMain {
+  display: block;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 35px; }
+
+/*USO DEL MIXIN*/
+.h1Bio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; }
+
+.carousel-inner {
+  width: 500px;
+  height: 450px; }
+
+/*USO DEL MIXIN*/
+.contactoFlex, .sectionGiras, footer .ulFlexibleFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/*USO DE UN EXTEND*/
+/*MAPA DECLARADO*/
+/*VARIABLES DECLARADAS DE SASS*/
+/*FOOTER EN EL CSS*/
+footer {
+  position: sticky;
+  bottom: 0;
+  margin-top: 40px;
+  background-color: black;
+  /*USO DE UN EXTEND*/ }
+  footer .ulFlexibleFooter {
+    list-style-type: none;
+    flex-direction: row; }
+    footer .ulFlexibleFooter li {
+      display: inline-block;
+      margin: 15px; }
+      footer .ulFlexibleFooter li a {
+        color: blueviolet;
+        font-size: 17px;
+        font-family: "Titillium Web", sans-serif;
+        text-decoration: none; }
+      footer .ulFlexibleFooter li:hover {
+        background-color: white;
+        color: blueviolet; }
+
+/*MAPA DECLARADO*/
+/*VARIABLES DECLARADAS DE SASS*/
+/*USO DE GRID DEL CSS*/
+.gridIndex {
+  /*UN BLOQUE DE GRID*/
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-items: center;
+  grid-template-areas: ". h1 ." ". video ." ". h2 ." ". p ." ". iframe ."; }
+  .gridIndex .titleBio {
+    font-size: 65px; }
+  .gridIndex .h1Index {
+    grid-area: h1;
+    margin-right: 30px;
+    align-items: center; }
+  .gridIndex .videoMain {
+    margin-bottom: 40px;
+    grid-area: video; }
+  .gridIndex .h2Index {
+    grid-area: h2; }
+  .gridIndex .pMain {
+    display: block;
+    font-weight: bolder;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    grid-area: p; }
+  .gridIndex iframe {
+    grid-area: iframe; }
+
+.albumPadre {
+  /*OTRO BLOQUE DE GRID*/
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 200px 350px 350px 350px;
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+  justify-content: center;
+  grid-template-areas: "h1 h1 h1" "album1 album2 album3" "album4 album5 album6" "album7 album8 album9" ". album10 ."; }
+  .albumPadre .pBio {
+    line-height: 2; }
+  .albumPadre .center {
+    text-align: center; }
+  .albumPadre .bolder {
+    font-weight: bolder; }
+  .albumPadre .centerTitle {
+    text-align: center;
+    margin-top: 100px; }
+  .albumPadre .h1Grid {
+    grid-area: h1; }
+  .albumPadre .albumHijo1 {
+    grid-area: album1; }
+  .albumPadre .albumHijo2 {
+    grid-area: album2; }
+  .albumPadre .albumHijo3 {
+    grid-area: album3; }
+  .albumPadre .albumHijo4 {
+    grid-area: album4; }
+  .albumPadre .albumHijo5 {
+    grid-area: album5; }
+  .albumPadre .albumHijo6 {
+    grid-area: album6; }
+  .albumPadre .albumHijo7 {
+    grid-area: album7; }
+  .albumPadre .albumHijo8 {
+    grid-area: album8; }
+  .albumPadre .albumHijo9 {
+    grid-area: album9; }
+  .albumPadre .albumHijo10 {
+    grid-area: album10; }
+  .albumPadre .rotate:hover {
+    transform: rotateX(30deg) rotateY(30deg); }
+
+/*TODAS LAS MEDIA QUERIES UTILIZADAS TANTO PARA MOBILE COMO PARA DESKTOP*/
+@media screen and (min-width: 769px) and (max-width: 1068px) {
+  .h1Index {
+    margin-left: 45px; }
+  video {
+    width: 400px;
+    height: 400px; }
+  iframe {
+    width: 600px;
+    height: 360px; }
+  .albumPadre {
+    grid-template-columns: 275px 275px;
+    grid-template-rows: 150px 270px 270px 270px 270px 270px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas: "h1 h1" "album1 album2" "album3 album4" "album5 album6" "album7 album8" "album9 album10"; }
+  section a img {
+    width: 250px;
+    height: 250px; }
+  .h1 {
+    width: 300px;
+    max-width: max-content;
+    margin: auto; }
+  .albumHijo1 {
+    width: 250px;
+    height: 250px; }
+  .albumHijo2 {
+    width: 250px;
+    height: 250px; }
+  .albumHijo3 {
+    width: 250px;
+    height: 250px; }
+  .albumHijo4 {
+    width: 250px;
+    height: 250px; }
+  .albumHijo5 {
+    width: 250px;
+    height: 250px; }
+  .albumHijo6 {
+    width: 250px;
+    height: 250px; }
+  .albumHijo7 {
+    width: 250px;
+    height: 250px; }
+  .albumHijo8 {
+    width: 250px;
+    height: 250px; }
+  .albumHijo9 {
+    width: 250px;
+    height: 250px; }
+  .albumHijo10 {
+    width: 250px;
+    height: 250px; }
+  footer {
+    margin-top: 100px; }
+  .h1Bio {
+    display: flex;
+    justify-content: center;
+    justify-items: center; } }
+
+@media screen and (max-width: 768px) {
+  .gridIndex {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    grid-template-areas: " h1 " "video" "h2" "p" "iframe"; }
+  .h1Index {
+    margin-left: 30px; }
+  .albumPadre {
+    grid-template-columns: 200px;
+    grid-template-rows: 180px 240px 240px 240px 240px 240px;
+    column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    grid-template-areas: "h1 h1" "album1 album2" "album3 album4" "album5 album6" "album7 album8" "album9 album10"; }
+  .albumHijo1 {
+    width: 200px;
+    height: 200px; }
+  .albumHijo2 {
+    width: 200px;
+    height: 200px; }
+  .albumHijo3 {
+    width: 200px;
+    height: 200px; }
+  .albumHijo4 {
+    width: 200px;
+    height: 200px; }
+  .albumHijo5 {
+    width: 200px;
+    height: 200px; }
+  .albumHijo6 {
+    width: 200px;
+    height: 200px; }
+  .albumHijo7 {
+    width: 200px;
+    height: 200px; }
+  .albumHijo8 {
+    width: 200px;
+    height: 200px; }
+  .albumHijo9 {
+    width: 200px;
+    height: 200px; }
+  .albumHijo10 {
+    width: 200px;
+    height: 200px; }
+  section a img {
+    width: 200px;
+    height: 200px; }
+  .h1 {
+    width: 160px;
+    margin-bottom: 10px; }
+  video {
+    width: 350px;
+    height: 350px; }
+  h2 {
+    height: 64px;
+    width: 400px; }
+  iframe {
+    width: 450px;
+    height: 360px; }
+  .hijoContactoFlex {
+    margin-top: 20px;
+    width: 400px;
+    height: 50px; }
+  footer {
+    margin-top: 100px; }
+  section div h1 {
+    margin-left: 50px;
+    font-size: 50px; }
+  div h2 {
+    margin-left: 60px; } }
+
+/*MAPA DECLARADO*/
+/*VARIABLES DECLARADAS DE SASS*/
+/*MIXIN DECLARADOS*/
+/*VARIABLES DECLARADAS DE SASS*/
+body {
+  background: #232430;
+  background: linear-gradient(0deg, #232430 18%, #0e1130 30%, black 100%); }
+
+div h2 {
+  margin-left: 90px; }

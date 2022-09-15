@@ -1,0 +1,29 @@
+@import "_maps.scss";
+@import "variables.scss";
+
+/*HEADER DEL CSS*/
+/*USO DE UN MAP*/
+header {
+    position: sticky;
+    top: map-get($map: $sizes, $key:0 );
+    z-index: 1;
+    background-color: $black-color;
+}
+
+.nav-link {
+    font-family: $nav-fontfamily;
+    color: $white-color;
+
+    &:hover {
+        color: $blueviolet-color
+    }
+
+    width:10%;
+    padding: 10px
+}
+
+.imgIndex {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}

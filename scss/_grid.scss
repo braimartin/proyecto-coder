@@ -1,0 +1,128 @@
+@import "_maps.scss";
+@import "_variables.scss";
+
+/*USO DE GRID DEL CSS*/
+.gridIndex {    /*UN BLOQUE DE GRID*/
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    grid-template-areas:
+        ". h1 ."
+        ". video ."
+        ". h2 ."
+        ". p ."
+        ". iframe .";
+
+    .titleBio {
+        font-size: map-get($map: $sizes, $key:65 );
+    }
+
+    .h1Index {
+        grid-area: h1;
+        margin-right: 30px;
+        align-items: center;
+
+    }
+
+    .videoMain {
+        margin-bottom: 40px;
+        grid-area: video;
+    }
+
+    .h2Index {
+        grid-area: h2;
+    }
+
+    .pMain {
+        display: block;
+        font-weight: bolder;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        grid-area: p;
+    }
+
+    iframe {
+        grid-area: iframe;
+    }
+}
+
+.albumPadre {    /*OTRO BLOQUE DE GRID*/
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px 350px 350px 350px;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+    justify-content: center;
+    grid-template-areas:
+        "h1 h1 h1"
+        "album1 album2 album3"
+        "album4 album5 album6"
+        "album7 album8 album9"
+        ". album10 ."
+    ;
+
+    .pBio {
+        line-height: 2;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .bolder {
+        font-weight: bolder;
+    }
+
+    .centerTitle {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .h1Grid {
+        grid-area: h1;
+    }
+
+    .albumHijo1 {
+        grid-area: album1;
+    }
+
+    .albumHijo2 {
+        grid-area: album2;
+    }
+
+    .albumHijo3 {
+        grid-area: album3;
+    }
+
+    .albumHijo4 {
+        grid-area: album4;
+    }
+
+    .albumHijo5 {
+        grid-area: album5;
+    }
+
+    .albumHijo6 {
+        grid-area: album6;
+    }
+
+    .albumHijo7 {
+        grid-area: album7;
+    }
+
+    .albumHijo8 {
+        grid-area: album8;
+    }
+
+    .albumHijo9 {
+        grid-area: album9;
+    }
+
+    .albumHijo10 {
+        grid-area: album10;
+    }
+
+    .rotate:hover {
+        transform: rotateX(30deg) rotateY(30deg)
+    }
+}

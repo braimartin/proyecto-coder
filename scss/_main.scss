@@ -1,0 +1,33 @@
+@import "_mixin.scss";
+@import "variables.scss";
+
+/*CSS DEL MAIN*/
+.mainFont {
+    font-family: $main-fontfamily;
+    color: $blueviolet-color;
+}
+
+.textMain {
+    display: block;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+/*USO DEL MIXIN*/
+.h1Bio {
+    @include flex-direction-center (row);
+    margin-bottom: 20px;
+}
+
+.carousel-inner {
+    width: 500px;
+    height: 450px;
+}
+/*USO DEL MIXIN*/
+.contactoFlex {
+    @include flex-direction-center (column);
+}
+/*USO DE UN EXTEND*/
+.sectionGiras {
+    @extend .contactoFlex;   
+}

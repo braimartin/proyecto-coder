@@ -1,0 +1,33 @@
+@import "_maps.scss";
+@import "variables.scss";
+
+/*FOOTER EN EL CSS*/
+footer {
+    position: sticky;
+    bottom: 0;
+    margin-top: 40px;
+    background-color: $black-color;
+    /*USO DE UN EXTEND*/
+    .ulFlexibleFooter {
+        list-style-type: none;
+        @extend .contactoFlex;
+        flex-direction: row;
+
+        li {
+            display: inline-block;
+            margin: 15px;
+
+            a {
+                color: $blueviolet-color;
+                font-size: map-get($map: $sizes, $key: 17);
+                font-family: $nav-fontfamily;
+                text-decoration: none 
+                
+            }   &:hover {
+                    background-color: $white-color;
+                    color: $blueviolet-color;
+                }
+
+            }
+        }
+    }
